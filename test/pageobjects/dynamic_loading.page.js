@@ -3,7 +3,7 @@ import Page from './page.js';
 class dynamicPage extends Page {
 
 get startButton () {
-    return $('//*[@id="start"]/button')
+    return $('//*[@id="start"]/button');
 }
 
     open () {
