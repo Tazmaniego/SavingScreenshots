@@ -7,7 +7,7 @@ describe('My Dynamic Page Screenshot', () => {
         await browser.saveScreenshot('./test/images/openScreenshot.png');
         await browser.pause(800);
         await (dynamicPage).startButton.click();
-        await browser.pause(6000);
+        await expect(dynamicPage.Header4).toBeExisting();
         await browser.saveScreenshot('./test/images/openScreenshot2.png');
         await browser.pause(1500);
     });
