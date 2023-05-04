@@ -7,13 +7,13 @@ get startButton () {
 }
 
 get Header4 () {
-    return $('//*[@id="finish"]/h4')
+    return $('//*[@id="finish"]/h4');
 }
 
     open () {
         return super.open('dynamic_loading/2');
     }
 
-}
+};
 
 export default new dynamicPage();
